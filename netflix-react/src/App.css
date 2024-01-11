@@ -43,20 +43,10 @@ header {
   margin-left: auto;
   margin-right: 22px;
 }
-.movieCard{
-  transition: transform 0.2s linear;
-}
-.movieCard{
-  transform: scale(1.2);
-    z-index: 4;
-}
-.cardImg{
-  cursor: pointer;
-  height: 300px;
-}
-.bi-play-circle-fill{
-  color: rgb(23, 148, 23);
-  cursor: pointer;
+
+.bi {
+  color: white;
+  font-size: 1.2rem;
 }
 
 footer .bi {
@@ -74,33 +64,20 @@ footer p:last-child {
   font-size: 0.9rem;
 }
 
-
-
-
-/* IMPORTED CSS */
-
-.bi {
-  color: white;
-  font-size: 1.2rem;
-}
-
-.bi-pencil-fill {
-  bottom: 10px;
-  left: 10px;
-  background-color: black;
-  border: 1px solid white;
-  padding: 0.1rem 0.5rem;
-  border-radius: 50%;
-  cursor: pointer;
+.grigio {
+  color: gray;
 }
 
 @media screen and (min-width:768px) {
+
+
   .footerContainer {
       width: 50%;
   }
 }
 
 /* CUSTOM CSS */
+
 .navbar {
   z-index: 5;
 }

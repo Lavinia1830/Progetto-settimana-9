@@ -10,12 +10,12 @@ class Gallery extends Component {
         isError: false,
     }
 
-    MOVIE_URL = 'https://www.omdbapi.com/?apikey=d35b2b10&s=';
+    movieUrl = 'http://www.omdbapi.com/?apikey=4e11b69c&s=';
     movieQuery = this.props.movie;
 
     getMovies = async () => {
         try {
-            let respose = await fetch(this.MOVIE_URL + this.movieQuery)
+            let respose = await fetch(this.movieUrl + this.movieQuery)
             if (respose.ok) {
                 let data = await respose.json();
                 console.log('Ho trovato:', data);
@@ -49,10 +49,7 @@ class Gallery extends Component {
 
 
     componentDidMount() {
-
-        console.log('SONO COMPONENTDIDMOUNT()!')
         this.getMovies()
-
     }
 
     render() {
