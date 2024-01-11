@@ -2,8 +2,7 @@ import { Component } from 'react';
 import { Container, Alert, Spinner, Row } from 'react-bootstrap';
 import SingleMovie from './SingleMovie'
     
-
-export default class Main extends Component {
+class Gallery extends Component {
 
     state = {
         movies: [],
@@ -82,3 +81,5 @@ export default class Main extends Component {
         )
     }
 }
+
+export default Gallery;

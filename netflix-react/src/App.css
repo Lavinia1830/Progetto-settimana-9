@@ -36,6 +36,7 @@ header {
 #genres{
   background-color: transparent;
   border: 1px solid #fff;
+  margin-bottom: 1em;
 }
 .grid{
   color: #f5f5f1;
@@ -94,8 +95,6 @@ footer p:last-child {
 }
 
 @media screen and (min-width:768px) {
-
-
   .footerContainer {
       width: 50%;
   }
